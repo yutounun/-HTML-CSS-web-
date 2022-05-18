@@ -95,7 +95,7 @@ img {
 .big-bg {
   background-size: cover;
   background-position: center top;
-  background-color: #0db;
+  /* background-color: #0db; */
   background-blend-mode: hard-light;
 }
 
@@ -266,6 +266,51 @@ aside p {
   object-fit: cover;
 }
 
+/* CONTACT
+------------------------------------------------- */
+#contact {
+  background-image: url(images/contact-bg.jpg);
+  min-height: 100vh;
+}
+
+/* form */
+form div {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255,255,255,.5);
+  border: 1px #fff solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 240px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6em;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
 /* Mobile
 ------------------------------------------ */
 @media (max-width: 600px) {
@@ -350,6 +395,16 @@ aside p {
   
   .big-box img {
     height: auto;
+  }
+
+  #contact .page-title {
+    margin-top: 40px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    max-width: 100%;
   }
 }
 
